@@ -29,14 +29,12 @@ export const allWheelList = [
 ];
 
 export const NAVIGATION_BUTTON_LIST = {
-  "previous" : {
+  previous: {
     id: "previous",
-    buttonText :"<",
+    buttonText: "<",
   },
-  "next" : {
+  next: {
     id: "next",
-    buttonText :">",
-  }
-
-}
-
+    buttonText: ">",
+  },
+};

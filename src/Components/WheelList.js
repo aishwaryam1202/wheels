@@ -3,7 +3,7 @@ import { NavigationButton } from "./NavigationButton";
 import { WheelDisplay } from "./WheelDisplay";
 import {
   allWheelList,
-  NAVIGATION_BUTTON_LIST
+  NAVIGATION_BUTTON_LIST,
 } from "../Constants/WheelConstant";
 import "./../Css/WheelList.css";
 
@@ -21,13 +21,13 @@ export class WheelList extends Component {
   }
 
   componentDidMount() {
-    document.addEventListener("keydown",this.onKeyPress, false);
+    document.addEventListener("keydown", this.onKeyPress, false);
   }
 
   onKeyPress(e) {
-    if(e.key === 'ArrowRight') {
+    if (e.key === "ArrowRight") {
       this.onNavigationButtonClick(NAVIGATION_BUTTON_LIST.next.id);
-    } else if(e.key === 'ArrowLeft'){
+    } else if (e.key === "ArrowLeft") {
       this.onNavigationButtonClick(NAVIGATION_BUTTON_LIST.previous.id);
     }
   }
@@ -66,6 +66,7 @@ export class WheelList extends Component {
           imgSrc={imgSrc}
           fWDType={fWDType}
           metaInfo={metaInfo}
+          isActiveWheel={i === activeWheelIndex}
           className={
             i === activeWheelIndex
               ? "wheel-pic-info-parent-selected"
@@ -79,19 +80,21 @@ export class WheelList extends Component {
 
   render() {
     const { activeWheelIndex } = this.state;
-    const {id: leftId, buttonText: leftButtonText } = NAVIGATION_BUTTON_LIST.previous;
-    const {id: rigthId, buttonText: rightButtonText } = NAVIGATION_BUTTON_LIST.next;
+    const { id: leftId, buttonText: leftButtonText } =
+      NAVIGATION_BUTTON_LIST.previous;
+    const { id: rigthId, buttonText: rightButtonText } =
+      NAVIGATION_BUTTON_LIST.next;
     return (
       <div className="wheels-img-div">
         <NavigationButton
-         type= {leftId}
+          type={leftId}
           buttonText={leftButtonText}
           isDisabled={activeWheelIndex === 0}
           onButtonClick={this.onNavigationButtonClick}
         />
         {this.getWheelList(allWheelList)}
         <NavigationButton
-          type= {rigthId}
+          type={rigthId}
           buttonText={rightButtonText}
           isDisabled={activeWheelIndex === allWheelList.length - 1}
           onButtonClick={this.onNavigationButtonClick}

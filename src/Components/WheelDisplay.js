@@ -2,9 +2,26 @@ import React, { useEffect } from "react";
 import "./../Css/WheelDisplay.css";
 
 export const WheelDisplay = (props) => {
-  const { imgSrc, metaInfo, fWDType, name, className, onWheelClick, index } =
-    props;
+  const {
+    imgSrc,
+    metaInfo,
+    fWDType,
+    name,
+    className,
+    onWheelClick,
+    index,
+    isActiveWheel,
+  } = props;
   useEffect(() => {}, [className]);
+  const imgStyle = isActiveWheel
+    ? {
+        height: 300,
+        width: 300,
+      }
+    : {
+        height: 200,
+        width: 200,
+      };
   return (
     <div
       className={className}
@@ -12,7 +29,7 @@ export const WheelDisplay = (props) => {
         onWheelClick(index);
       }}
     >
-      <img src={imgSrc} alt={name} />
+      <img src={imgSrc} style={imgStyle} alt={name} />
       <div className="wheel-info-1">{metaInfo}</div>
       <div className="wheel-info-2">{fWDType}</div>
       <div className="wheel-name">{name}</div>
