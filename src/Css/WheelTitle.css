@@ -1,0 +1,13 @@
+.background-div .wheels-text-div .wheel-title-div {
+  font-weight: 400;
+  font-size: 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  padding-left: 30px;
+  color: #67696b;
+  border-left-style: solid;
+  border-left-color: black;
+  border-left-width: 10px;
+}

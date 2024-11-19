@@ -1,0 +1,9 @@
+.background-div .wheels-img-div {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  padding: 10px 0px;
+}

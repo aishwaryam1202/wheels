@@ -1,0 +1,38 @@
+.background-div .wheels-img-div .wheel-pic-info-parent {
+  max-width: 400px;
+  text-align: center;
+  font-size: 17px;
+  min-height: 500px;
+  padding: 50px;
+}
+
+.background-div .wheels-img-div .wheel-pic-info-parent-selected {
+  background-image: url("./../Assets/wheel-bg.jpg");
+  max-width: 400px;
+  text-align: center;
+  font-size: 17px;
+  min-height: 600px;
+  padding: 0px 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  transform: scale(1.1);
+}
+
+.background-div .wheels-img-div .wheel-pic-info-parent .wheel-info-1 {
+  font-weight: 600;
+  padding: 2px;
+
+}
+
+.background-div .wheels-img-div .wheel-pic-info-parent .wheel-info-2 {
+  max-width: 400px;
+  padding: 2px;
+}
+
+.background-div .wheels-img-div .wheel-pic-info-parent .wheel-name {
+  font-weight: 600;
+  padding: 4px;
+}

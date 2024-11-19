@@ -1,0 +1,17 @@
+.background-div {
+  background-image: url("./Assets/bg-cover.png");
+  height: 100%;
+  width: 99%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.background-div .wheels-text-div {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
