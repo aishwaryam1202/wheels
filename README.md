@@ -31,6 +31,21 @@ This Project is deployed in this this URL [https://aishwaryam1202.github.io/whee
 ## Unit testcases 
 * Test cases are added to ensure the component Divs are rendered.
 
+## Instructions:
+Use font-family: https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500&display=swap
+
+## Instructions given and Implemented
+- [x] Import the Wheel images where Images are saved in the images.zip folder.
+- [x] Use font-family: https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500&display=swa
+- [x] Set container maximum size to “1152px X 720px”
+- [x] Convert the attached “layout.jpg” to HTML without using any html framework like (bootstrap, w3css etc.)
+- [x] Keep container maximum size of “1152px X 720px”.
+- [x] Layout should be vertical center position.
+- [x] Slider functionality should be enabled without using any plugin
+- [x] Zoom functionality – by default all wheel images should be in normal state.
+- [x] On click, an active wheel should be zoomed smoothly as per design.
+- [x] While clicking left/right arrow, an active state will be inactive (zoom to normal state) and then move accordingly.
+- [x] If slide reached the beginning/end, the left/right side arrow should be disabled (unable to click) 
   
 
 # How to run"
