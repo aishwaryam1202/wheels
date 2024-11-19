@@ -28,6 +28,9 @@ This Project is deployed in this this URL [https://aishwaryam1202.github.io/whee
 ## Code Architecture
 ![image](https://github.com/user-attachments/assets/990050a2-1859-4735-9eb5-c545ad462c59)
 
+## Unit testcases 
+* Test cases are added to ensure the component Divs are rendered.
+
   
 
 # How to run"
