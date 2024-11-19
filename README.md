@@ -1,4 +1,4 @@
-# Wheesls React Project
+# Wheels React Project
 
 This Project is deployed in this this URL [https://aishwaryam1202.github.io/wheels/]
 
