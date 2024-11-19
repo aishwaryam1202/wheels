@@ -7,7 +7,6 @@ export const NavigationButton = (props) => {
   return (
     <div className={className} onClick={() => onButtonClick(type)}>
       {buttonText}
-      <i class="fas fa-less-than-equal"></i>
     </div>
   );
 };
