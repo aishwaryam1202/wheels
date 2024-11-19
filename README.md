@@ -1,5 +1,7 @@
 # Wheesls React Project
 
+This Project is deployed in this this URL [https://aishwaryam1202.github.io/wheels/]
+
 ## UI Requirements
 * Have tried to achieve the Output layout given where is displays a list of Wheels **without using any HTML Framework**
 * Have achieved the size of the container to **1152px X 720px** as required with center- vertical layout
