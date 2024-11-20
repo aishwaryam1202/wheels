@@ -18,7 +18,22 @@
   flex-direction: column;
   justify-content: space-evenly;
   border: 1px solid black;
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
+  animation: breath 4s linear infinite;
+  transform :0.3s ease-in-out;
+}
+@keyframes breath {
+  0%   { background-size: 100% auto; }
+  50% { background-size: 140% auto; }
+  100% { background-size: 100% auto; }
+}
+
+.background-div .wheels-img-div .wheel-pic-info-parent-selected .rotate {
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin { 
+  100% { -webkit-transform: rotate(360deg); } 
 }
 
 .background-div .wheels-img-div .wheel-pic-info-parent-selected .wheel-info-1,
