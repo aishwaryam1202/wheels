@@ -26,9 +26,9 @@ export class WheelList extends Component {
 
   onKeyPress(e) {
     if (e.key === "ArrowRight") {
-      this.onNavigationButtonClick(NAVIGATION_BUTTON_LIST.next.id);
+      this.onNavigationButtonClick(NAVIGATION_BUTTON_LIST.next);
     } else if (e.key === "ArrowLeft") {
-      this.onNavigationButtonClick(NAVIGATION_BUTTON_LIST.previous.id);
+      this.onNavigationButtonClick(NAVIGATION_BUTTON_LIST.previous);
     }
   }
   onClickingWheel(index) {
@@ -41,7 +41,7 @@ export class WheelList extends Component {
 
   onNavigationButtonClick(type) {
     const { activeWheelIndex } = this.state;
-    if (type === NAVIGATION_BUTTON_LIST.previous.id) {
+    if (type === NAVIGATION_BUTTON_LIST.previous) {
       if (activeWheelIndex > 0) {
         this.setState({
           activeWheelIndex: activeWheelIndex - 1,
@@ -80,22 +80,16 @@ export class WheelList extends Component {
 
   render() {
     const { activeWheelIndex } = this.state;
-    const { id: leftId, buttonText: leftButtonText } =
-      NAVIGATION_BUTTON_LIST.previous;
-    const { id: rigthId, buttonText: rightButtonText } =
-      NAVIGATION_BUTTON_LIST.next;
     return (
       <div className="wheels-img-div">
         <NavigationButton
-          type={leftId}
-          buttonText={leftButtonText}
+          type={NAVIGATION_BUTTON_LIST.previous}
           isDisabled={activeWheelIndex === 0}
           onButtonClick={this.onNavigationButtonClick}
         />
         {this.getWheelList(allWheelList)}
         <NavigationButton
-          type={rigthId}
-          buttonText={rightButtonText}
+          type={NAVIGATION_BUTTON_LIST.next}
           isDisabled={activeWheelIndex === allWheelList.length - 1}
           onButtonClick={this.onNavigationButtonClick}
         />

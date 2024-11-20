@@ -20,12 +20,9 @@ test("Summary Div to be Present", () => {
 });
 
 test("Navigation Next Button to be Present", () => {
-  const { id: rigthId, buttonText: rightButtonText } =
-    NAVIGATION_BUTTON_LIST.next;
   render(
     <NavigationButton
-      type={rigthId}
-      buttonText={rightButtonText}
+      type={NAVIGATION_BUTTON_LIST.next}
       isDisabled={false}
       onButtonClick={() => {}}
     />
@@ -35,12 +32,9 @@ test("Navigation Next Button to be Present", () => {
 });
 
 test("Navigation Previous Button to be Present", () => {
-  const { id: leftId, buttonText: leftButtonText } =
-    NAVIGATION_BUTTON_LIST.previous;
   render(
     <NavigationButton
-      type={leftId}
-      buttonText={leftButtonText}
+      type={NAVIGATION_BUTTON_LIST.previous}
       isDisabled={false}
       onButtonClick={() => {}}
     />
@@ -50,12 +44,9 @@ test("Navigation Previous Button to be Present", () => {
 });
 
 test("Navigation Previous Button to be Present", () => {
-  const { id: leftId, buttonText: leftButtonText } =
-    NAVIGATION_BUTTON_LIST.previous;
   render(
     <NavigationButton
-      type={leftId}
-      buttonText={leftButtonText}
+      type={NAVIGATION_BUTTON_LIST.previous}
       isDisabled={true}
       onButtonClick={() => {}}
     />

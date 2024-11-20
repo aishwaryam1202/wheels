@@ -29,7 +29,9 @@ export const WheelDisplay = (props) => {
         onWheelClick(index);
       }}
     >
-      <div className={isActiveWheel ? "rotate" : ""}><img src={imgSrc} style={imgStyle} alt={name} /></div>
+      <div className={isActiveWheel ? "rotate" : ""}>
+        <img src={imgSrc} style={imgStyle} alt={name} loading="lazy" />
+      </div>
       <div className="wheel-info-1">{metaInfo}</div>
       <div className="wheel-info-2">{fWDType}</div>
       <div className="wheel-name">{name}</div>

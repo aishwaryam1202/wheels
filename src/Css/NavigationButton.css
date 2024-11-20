@@ -4,8 +4,8 @@
 }
 
 .Button-div {
-    padding: 10px;
-    padding-bottom: 185px;
+    margin: 10px;
+    margin-bottom: 185px;
     cursor: pointer;
     font-weight: 600;
 }
