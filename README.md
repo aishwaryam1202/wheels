@@ -9,13 +9,14 @@ This Project is deployed in this this URL [https://aishwaryam1202.github.io/whee
 
 **Expected Output UI**
 
+
 ![image](https://github.com/user-attachments/assets/d112866c-5849-4f71-840d-d3e106645779)
-
-
 
 **HTML Web page with UI**
 
-![image](https://github.com/user-attachments/assets/288e35f3-e721-4bbf-8db0-462114760dee)
+
+![image](https://github.com/user-attachments/assets/c8103ef3-1b79-4a8c-addd-826b07d28186)
+
 
 
 ## Slider Functionality
