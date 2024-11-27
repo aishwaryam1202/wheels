@@ -2,7 +2,7 @@
   max-width: 400px;
   text-align: center;
   font-size: 17px;
-  min-height: 400px;
+  min-height: 450px;
   padding: 50px;
 }
 
@@ -18,7 +18,6 @@
   flex-direction: column;
   justify-content: space-evenly;
   border: 1px solid black;
-  /* transform: scale(1.1); */
   animation: breath 4s linear infinite;
   transform: 0.3s ease-in-out;
 }
@@ -51,7 +50,6 @@
 .background-div .wheels-img-div .wheel-pic-info-parent .wheel-info-1 {
   font-weight: 600;
   padding: 2px;
-
 }
 
 .background-div .wheels-img-div .wheel-pic-info-parent-selected .wheel-info-2,

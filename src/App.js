@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>WHEELS PROJECT</h1>
         <div className="background-div">
           <div className="wheels-text-div">
             <WheelTitle />

@@ -24,6 +24,10 @@ export class WheelList extends Component {
     document.addEventListener("keydown", this.onKeyPress, false);
   }
 
+  componentWillUnmount() {
+    document.removeEventListener("keydown", this.onKeyPress, false);
+  }
+
   onKeyPress(e) {
     if (e.key === "ArrowRight") {
       this.onNavigationButtonClick(NAVIGATION_BUTTON_LIST.next);
@@ -61,6 +65,7 @@ export class WheelList extends Component {
       const { activeWheelIndex } = this.state;
       return (
         <WheelDisplay
+          key={name}
           name={name}
           index={index}
           imgSrc={imgSrc}

@@ -11,7 +11,7 @@ export const NavigationButton = (props) => {
       : "fa fa-chevron-right";
   return (
     <div className={className} onClick={() => onButtonClick(type)}>
-      <i class={iconClassName}></i>
+      <i className={iconClassName}></i>
     </div>
   );
 };

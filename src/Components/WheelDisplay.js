@@ -12,7 +12,6 @@ export const WheelDisplay = (props) => {
     index,
     isActiveWheel,
   } = props;
-  useEffect(() => {}, [className]);
   const imgStyle = isActiveWheel
     ? {
         height: 300,
