@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.green-dot {
+  height: 15px;
+  width: 15px;
+  background-color: #0ce944;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+.red-dot {
+  height: 15px;
+  width: 15px;
+  background-color: #d61212;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.online-status-container {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  gap: 10px
+}

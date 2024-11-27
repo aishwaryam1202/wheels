@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./../Css/WheelDisplay.css";
 
 export const WheelDisplay = (props) => {
