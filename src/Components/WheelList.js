@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavigationButton } from "./NavigationButton";
-import { WheelDisplay } from "./WheelDisplay";
+import { WheelDisplay, ActiveWheelDisplay } from "./WheelDisplay";
 import {
   allWheelList,
   NAVIGATION_BUTTON_LIST,
@@ -63,7 +63,24 @@ export class WheelList extends Component {
     return wheels.map((wheelData, i) => {
       const { name, imgSrc, fWDType, metaInfo, index } = wheelData;
       const { activeWheelIndex } = this.state;
-      return (
+      const ActiveWheel = ActiveWheelDisplay(WheelDisplay);
+      return i === activeWheelIndex ? (
+        <ActiveWheel
+          key={name}
+          name={name}
+          index={index}
+          imgSrc={imgSrc}
+          fWDType={fWDType}
+          metaInfo={metaInfo}
+          isActiveWheel={i === activeWheelIndex}
+          className={
+            i === activeWheelIndex
+              ? "wheel-pic-info-parent-selected"
+              : "wheel-pic-info-parent"
+          }
+          onWheelClick={this.onClickingWheel}
+        />
+      ) : (
         <WheelDisplay
           key={name}
           name={name}

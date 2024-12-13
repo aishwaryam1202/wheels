@@ -1,0 +1,39 @@
+.Text {
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.rating {
+    display: flex;
+    margin: 2%;
+    font-size: 30px;
+    border: 1px solid black;
+}
+
+.yellowStar {
+    background-color:orange;
+    font-size: 25px;
+    height: 50px;
+    width: 150px;
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+
+.greyStar {
+    background-color: grey;
+    height: 50px;
+    font-size: 25px;
+    width: 150px;
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+}
