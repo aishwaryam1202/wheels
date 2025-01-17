@@ -5,10 +5,11 @@ import { WheelList } from "./Components/WheelList";
 import OnlineStatus from "./Components/OnlineStatus";
 import OnlineContext from "./Utils/OnlineContext";
 import { useState } from "react";
+import Detections from "./Components/Detections";
 import Appo from "./Components/Parent";
 import TimerComponent from './Components/TimerComponent';
 import { RatingComponent } from "./Components/RatingComponent";
-
+import MiniDrawer from "./Components/MiniDrawer";
 const App = () => {
   const [count, setCount] = useState([]);
 
@@ -42,15 +43,16 @@ const App = () => {
       {/* <TimerComponent/> */}
       {/* <RatingComponent/> */}
 
-      <button className={"increase-btn"} onClick={onIncreaseClicked}>
-        Increase
-      </button>
-      <button className={"decrease-btn"} onClick={onDecreaseClicked}>
-        Decrease
-      </button>
-      <div className={"display-text"}>
-        <span> {count}</span>
-      </div>
+        {/* <button className={"increase-btn"} onClick={onIncreaseClicked}>
+          Increase
+        </button>
+        <button className={"decrease-btn"} onClick={onDecreaseClicked}>
+          Decrease
+        </button>
+        <div className={"display-text"}>
+          <span> {count}</span>
+        </div> */}
+        <MiniDrawer/>
     </div>
   );
 }
